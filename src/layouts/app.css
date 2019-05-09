@@ -1,2 +1,8 @@
 html, body {
-  background: #00ffff; }
+  background: #D6EAF8; }
+
+.complete {
+  text-decoration: line-through; }
+
+.create-item {
+  margin: 20px 0px; }

@@ -1,12 +1,15 @@
-import useFoo from '../stores/fooHook'
-
 class API {
 
-	static getCount() {
-		const [{opOne, opTwo}, dispatch] = useFoo()
+	static getTodos() {
 		return new Promise( (resolve, reject) => {
 			setTimeout(() => {
-				// dispatch({type: 'loaded', data: 20})
+				resolve({ 
+					data: [ 
+						{id: 1, title: 'Finish Homework', isCompleted: false},
+						{id: 2, title: 'Complete Resume', isCompleted: false},
+						{id: 3, title: 'Read Book', isCompleted: true},
+					]
+				})
 			}, 2000)
 		})
 	}

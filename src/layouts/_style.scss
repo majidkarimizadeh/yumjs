@@ -1,3 +1,11 @@
 html, body {
-	background: $bodyBgColor
+	background: $bodyBgColor;
+}
+
+.complete {
+	text-decoration: line-through;
+}
+
+.create-item {
+	margin: 20px 0px;
 }
